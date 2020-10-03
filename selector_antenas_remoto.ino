@@ -40,8 +40,8 @@ WiFiClientSecure espClient;
 //Objeto telegram
 UniversalTelegramBot static bot(bottoken, espClient);    
 
-// Chequea si hay mensajes nuevos cada segundo
-int botRequestDelay = 1000;
+// Chequea si hay mensajes nuevos cada 3 segundos. Si se baja mucho el tiempo puede dar flood.
+int botRequestDelay = 3000;
 unsigned long lastTimeBotRan;
 
 // Define los pines usados en arduino para el control de los reles
