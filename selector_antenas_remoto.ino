@@ -59,7 +59,7 @@ const int rele8 = 22;
 //rele activo
 int activa = 0;
 
-// Handle what happens when you receive new messages
+// Caputra que ocurre cuando recibe nuevo mensaje
 void handleNewMessages(int numNewMessages) {
   
   for (int i=0; i<numNewMessages; i++) {
